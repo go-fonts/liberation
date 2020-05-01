@@ -18,8 +18,16 @@ func Example() {
 		log.Fatalf("could not parse Liberation Serif font: %+v", err)
 	}
 
+	var buf sfnt.Buffer
+	v, err := ttf.Name(&buf, sfnt.NameIDVersion)
+	if err != nil {
+		log.Fatalf("could not retrieve font version: %+v", err)
+	}
+
+	fmt.Printf("version:    %s\n", v)
 	fmt.Printf("num glyphs: %d\n", ttf.NumGlyphs())
 
 	// Output:
+	// version:    Version 2.1.0
 	// num glyphs: 2589
 }
