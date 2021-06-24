@@ -6,6 +6,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build ignore
 // +build ignore
 
 package main
@@ -32,7 +33,11 @@ func main() {
 	log.SetFlags(0)
 
 	var (
-		src = flag.String("src", "https://github.com/liberationfonts/liberation-fonts/files/4178407/liberation-fonts-ttf-2.1.0.tar.gz", "remote tar-gz file holding TTF files for Liberation fonts")
+		src = flag.String(
+			"src",
+			"https://github.com/liberationfonts/liberation-fonts/files/6418984/liberation-fonts-ttf-2.1.4.tar.gz",
+			"remote tar-gz file holding TTF files for Liberation fonts",
+		)
 	)
 
 	flag.Parse()

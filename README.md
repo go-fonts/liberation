@@ -36,7 +36,7 @@ func Example() {
 	fmt.Printf("num glyphs: %d\n", ttf.NumGlyphs())
 
 	// Output:
-	// version:    Version 2.1.0
-	// num glyphs: 2589
+	// version:    Version 2.1.4
+	// num glyphs: 2601
 }
 ```
