@@ -35,7 +35,7 @@ func main() {
 	var (
 		src = flag.String(
 			"src",
-			"https://github.com/liberationfonts/liberation-fonts/files/6418984/liberation-fonts-ttf-2.1.4.tar.gz",
+			"https://github.com/liberationfonts/liberation-fonts/files/7261483/liberation-fonts-2.1.5.tar.gz",
 			"remote tar-gz file holding TTF files for Liberation fonts",
 		)
 	)
